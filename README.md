@@ -18,6 +18,6 @@ Once you have completed the previous steps select the city you want to be a star
 
 ## Brief code documentation
 ### Graph storage
-The graph is stored using matrix. In order to work with matrixes in JavaScript I needed an external **math** library. [Math library used](https://mathjs.org/docs/datatypes/matrices.html#:~:text=js.,resize%20%2C%20clone%20%2C%20and%20more.)
+The graph is stored using matrix. In order to effectively work with matrixes in JavaScript an external [**math library**](https://mathjs.org/docs/datatypes/matrices.html#:~:text=js.,resize%20%2C%20clone%20%2C%20and%20more.) is needed. 
 ### Graph search algorythm
 Algorythm used here is called DFS. It works on adjacency lists, so before starting the algorythm I convert matrix to an adjacency list and then start it
