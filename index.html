@@ -5,9 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div class="main">
+        <h1>Inputs</h1>
+        <div class="container">
+            <h3>Add cities</h3>
+            <input type="text" id="add-city-input" placeholder="City name">
+            <button class="add-btn" id="add-city">Add city</button>
+        </div>
+        <div class="container">
+            <h3>Cities list</h3>
+            <div class="cities-container" id="display-cities">
+                <!-- <div class="city">
+                    <h5>City name</h5>
+                    <div>ID</div>
+                </div> -->
+            </div>
+            <button class="rmv-btn" id="clear-list">Clear the list</button>
+        </div>
+        <div class="container">
+            <h3>Add connections</h3>
+            <select id="first-city">
+                <option value="-1">-</option>
+            </select>
+            <select id="second-city">
+                <option value="-1">-</option>
+            </select>
+            <button class="add-btn" id="add-connection">Add connection</button>
+        </div>
+        <div class="container">
+            <h3>Connections list</h3>
+            <div class="cities-container" id="display-connections">
+                <!-- <div class="city flex-row-space-between" tag="city1:city2">
+                    <h5>City 1 -> City 2</h5>
+                    <button class="rmv-btn">Remove</button>
+                </div> -->
+            </div>
+        </div>
+        <h1>Results</h1>
+        <div class="container">
+            <h3>See possible trip destinations</h3>
+            <select id="result-city">
+                <option value="-1">-</option>
+            </select>
+            <button class="add-btn" id="destinations-show">Show</button>
+            <div class="cities-container" id="results-output" style="margin-top: 20px;">
+                <!-- <div class="city">
+                    <h5>City name</h5>
+                    <div>ID</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>

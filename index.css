@@ -1,0 +1,38 @@
+.cities-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.flex-row-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.city{
+    border: 2px gray solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 3px;
+}
+.city > h5{
+    margin: 2px;
+}
+.rmv-btn{
+    background: rgba(223, 16, 16, 0.628);
+    border: 0px;
+    border-radius: 3px;
+}
+.add-btn{
+    background: rgba(23, 223, 16, 0.628);
+    border: 0px;
+    border-radius: 3px;
+}
+.add-btn:hover{
+    background: rgba(9, 255, 0, 0.628);
+    cursor: pointer;
+}
+.rmv-btn:hover{
+    background: rgba(237, 10, 10, 0.774);
+    cursor: pointer;
+}
